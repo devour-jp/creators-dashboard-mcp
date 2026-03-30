@@ -38,6 +38,11 @@ claude mcp add creators-dashboard-mcp node $PWD/dist/index.js
 
 これだけで AI が MCP ツールを呼び出せるようになります。
 
+> **注意**: MCP はデフォルトで実行時のディレクトリ（プロジェクト）に登録されます。どのリポジトリからでも使いたい場合は `--scope user` を追加してください:
+> ```bash
+> claude mcp add creators-dashboard-mcp --scope user node $PWD/dist/index.js
+> ```
+
 ### 2. スキルを登録（任意・推奨）
 
 `examples/skill-claude-code.md` は Claude Code スキルの事例です。登録すると、より最適なフローで動作します。スキル名やディレクトリ名はご自由に変更してください。
