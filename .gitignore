@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code（internal リポジトリなので .claude/ は git 管理する）
+# allowlist で public への export 時に除外
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/

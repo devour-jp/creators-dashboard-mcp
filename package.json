@@ -1,0 +1,39 @@
+{
+  "name": "@devour/creators-dashboard-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Creators Dashboard — generate, validate, and preview catalog-info.yaml locally",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "creators-dashboard-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "demo": "npm run build && node examples/demo.mjs",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "mcp",
+    "creators-dashboard",
+    "catalog-info",
+    "yaml"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "ajv": "^8.18.0",
+    "ajv-formats": "^3.0.1",
+    "yaml": "^2.7.1",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@vitest/coverage-v8": "^4.1.2",
+    "typescript": "^5.8.0",
+    "vitest": "^4.1.2"
+  }
+}

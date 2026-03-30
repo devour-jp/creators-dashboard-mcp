@@ -1,0 +1,48 @@
+apiVersion: devour.jp/v1alpha1
+kind: Component
+metadata:
+  name: my-awesome-app
+  description:
+    short: "100ステージ以上のパズルゲーム"
+    long: "100ステージ以上のパズルゲーム。\n毎週新ステージを追加中。\nオフラインでも遊べます。"
+  tags:
+    - game
+    - puzzle
+  links:
+    - url: https://github.com/example/my-awesome-app
+    - url: https://apps.apple.com/app/id1234567890
+    - url: https://youtube.com/watch?v=example
+spec:
+  type: game
+  lifecycle: production
+  devour:
+    release:
+      current:
+        version: "1.2.0"
+        date: "2026-03-28"
+        headline:
+          short: "新ステージ10面追加"
+          long: "新ステージ10面追加。\nランキング機能も実装しました。"
+      next:
+        version: "1.3.0"
+        headline:
+          short: "マルチプレイ対応予定"
+    author:
+      comment:
+        short: "マルチプレイのテストプレイヤー募集中！"
+    card:
+      bg: "#1a1a2e"
+      fg: "#e0e0e0"
+    social:
+      x:
+        account: "mydev_account"
+        fix: "1234567890123456789"
+        latest:
+          query: "my-awesome-app"
+    org:
+      bio:
+        short: "ゲームを作っています"
+        long: "個人でゲームを作っています。\nパズルとストラテジーが好き。"
+      links:
+        - url: https://zenn.dev/mydev
+        - url: https://note.com/mydev
